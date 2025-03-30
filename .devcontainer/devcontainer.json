@@ -1,0 +1,7 @@
+{
+  "tasks": {
+    "test": "echo \"No tests are defined for this project.\"",
+    "build": "No command needed.",
+    "launch": "npx http-server -p 3000"
+  }
+}
