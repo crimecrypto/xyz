@@ -44,7 +44,7 @@ To deploy the application to GitHub Pages, follow these steps:
 1. Ensure that the repository is set up with the necessary GitHub Actions workflow for deployment. The workflow file is located at `.github/workflows/nuxtjs.yml`.
 2. The workflow is triggered on pushes to the `main` branch and can also be manually triggered from the Actions tab.
 3. The workflow consists of two jobs: `build` and `deploy`.
-4. The `build` job checks out the code, detects the package manager, sets up Node.js, configures Pages, restores cache, installs dependencies, lints the code, runs tests, generates static HTML with Nuxt, and uploads the artifact.
+4. The `build` job checks out the code, detects the package manager, sets up Node.js, restores cache, installs dependencies, lints the code, runs tests, generates static HTML with Nuxt, and uploads the artifact to `./.output/public`.
 5. The `deploy` job deploys the generated static site to GitHub Pages.
 
 Make sure to push your changes to the `main` branch to trigger the deployment process. You can also manually trigger the workflow from the Actions tab in your GitHub repository. Once the deployment is complete, your site will be available at the URL specified in the `CNAME` file, which is `pulstg.xyz`.
